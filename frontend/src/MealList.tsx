@@ -49,7 +49,7 @@ const MealClassifier = () => {
       }));
 
       // Save to Supabase
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from("meals")
         .insert([{ name: mealName, ingredients, category, nutrition_info: ingredientAnalysis }]);
 

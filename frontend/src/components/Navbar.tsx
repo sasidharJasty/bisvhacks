@@ -1,6 +1,6 @@
 import Logo from "../assets/imageBG.png";
 import { DropDownNavbar } from "./NavMenu";
-import React from "react";
+
 
 export default function Navbar() {
   return (

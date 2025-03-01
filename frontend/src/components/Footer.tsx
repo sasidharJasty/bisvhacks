@@ -1,5 +1,4 @@
 import Logo from "../assets/Horz_Logo.png";
-import React from "react";
 export default function Footer(): JSX.Element {
   return (
     <section className="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
