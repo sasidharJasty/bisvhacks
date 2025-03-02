@@ -1,4 +1,4 @@
-import { History, Home, Inbox, Utensils, MapPin, ChevronUp, User2, Receipt, LogOut } from "lucide-react"
+import { History, Home, Inbox, Utensils, MapPin, ChevronUp, Map, User2, Receipt, LogOut } from "lucide-react"
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import React from "react";
@@ -45,6 +45,11 @@ const donorItems = [
     url: "/donor/history",
     icon: History,
   },
+  {
+    title: "Heat Map",
+    url: "/calmap",
+    icon: Map,
+  },
 
 ]
 
@@ -68,6 +73,11 @@ const receiverItems = [
     title: "Meal Plans",
     url: "/foodbank/mealplans",
     icon: Utensils,
+  },
+  {
+    title: "Heat Map",
+    url: "/calmap",
+    icon: Map,
   },
 
 ]
@@ -115,10 +125,10 @@ export function AppSidebar() {
     <Sidebar variant="sidebar" className="">
       <SidebarHeader className="pt-8 pl-8">
         <a className="flex" href="/">
-        <img src={image} className="my-auto mr-2 w-8"  /><span className="text-3xl font-bold">FreshBay</span>
+        <img src={image} className="my-auto mr-2 w-48"  />
         </a>
       </SidebarHeader>
-      <SidebarContent className="pl-2 mt-5 ml-2">
+      <SidebarContent className="pl-2 ml-2">
         <SidebarGroup>
           <SidebarGroupLabel>Menu</SidebarGroupLabel>
           <SidebarGroupContent>

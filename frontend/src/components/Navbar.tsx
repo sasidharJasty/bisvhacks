@@ -8,11 +8,11 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            className="invert dark:invert-0 mix-blend-difference h-[45px]"
+            className="invert dark:invert-0 mix-blend-difference h-[50px]"
             src={Logo}
             alt="Logo"
           />
-          <h1 className="text-4xl  font-bold text-gray-900">FreshBay</h1>
+
         </a>
         <button
           data-collapse-toggle="navbar-dropdown"
