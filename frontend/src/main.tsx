@@ -10,11 +10,12 @@ import FoodBankInventory from "./FoodBanks/Inventory.tsx"
 import ResetPassword from "./resetPassword.tsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NDVIMap from "./CalMap.tsx";
+import CaliforniaHeatmap from "./Heatmap.tsx";
 import History from "./Donors/History.tsx"
 import Location from "./FoodBanks/Locations.tsx"
 import FoodBankMealPlans from "./FoodBanks/MealPlans.tsx"
 import Individuals from "./Individuals.tsx"
-import HeatMap from "./HeatMap.tsx";
+
 
 import "./index.css";
 
@@ -34,9 +35,10 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/reset-password-form/:resetId" element={<ResetPassword />} />
           <Route path = "/foodbank/mealplans" element={<FoodBankMealPlans/>} />
           <Route path = "/calmap" element={<NDVIMap/>} />
-          <Route path = "/heatmap" element={<HeatMap/>} />
+
 
           {/* Smart Menu Insights Routes */}
+          <Route path = "/heatmap" element={<CaliforniaHeatmap/>} />
           <Route path = "/individuals" element = {<Individuals/>} />
           {/* Smart Menu Insights Routes */}
         </Routes>
